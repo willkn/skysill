@@ -1,6 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import '@/assets/bethany/assets/css/style.css'
+import '@/assets/bethany/assets/vendor/bootstrap/css/bootstrap-grid.css'
+import '@/assets/bethany/assets/vendor/bootstrap/css/bootstrap-reboot.css'
+import '@/assets/bethany/assets/vendor/bootstrap/css/bootstrap.css'
+
+
 
 Vue.use(VueRouter)
 
@@ -10,14 +16,6 @@ const routes = [
     name: 'Home',
     component: Home
   },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
 ]
 
 const router = new VueRouter({
