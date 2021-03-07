@@ -55,12 +55,3 @@ app.post("/createPost", (req, res) => {
     })
   })
 });
-
-// app.post('/createPost', function (req, res) {
-//   var dateTime = new Date()
-
-//   console.log(dateTime, 'body:', req.body);
-//   res.send('worked')
-//   res.status(200)
-
-// })
